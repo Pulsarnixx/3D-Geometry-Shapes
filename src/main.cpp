@@ -111,15 +111,6 @@ int main()
         Data from nowhere
         */
 
-        
-
-        unsigned int indicates[]{
-
-        0, 1, 2,
-        2, 3, 0
-
-        };
-
 
         Cube c1;
         //Background color
@@ -127,7 +118,7 @@ int main()
 
         VertexArray VAO;
         VertexBuffer VBO(c1.GetVerticesArrayData(), c1.GetVerticesArraySize());
-        IndexBuffer EBO(indicates,6);
+        IndexBuffer EBO(c1.GetIndicatesArrayData(),c1.GetIndicatesArraySize());
 
         //VERTEX ATTRIBUTES 
         VertexBufferLayout layout;
