@@ -6,8 +6,6 @@
 #include "IndexBuffer.h"
 #include "Shader.h"
 
-
-
 #define DEBUG
 
 #ifdef DEBUG
@@ -24,12 +22,12 @@ void GLClearError();
 
 bool GLLogError(const char* function, const char* file, unsigned int line);
 
-
 class Renderer
 {
     private:
 
     public:
+        void UpdateClearColor(float r, float g, float b, float a) const;
         void Clear() const;
         void Draw(const VertexArray& vao, const IndexBuffer& ebo, const Shader& shader) const;
 };

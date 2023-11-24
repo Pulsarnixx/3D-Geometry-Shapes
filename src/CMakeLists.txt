@@ -7,6 +7,8 @@ add_executable(
         Shader.cpp
         Texture.cpp
         Timer.cpp
+        Entity.cpp
+        Cube.cpp
         )
 
 include_directories(../vendor/)

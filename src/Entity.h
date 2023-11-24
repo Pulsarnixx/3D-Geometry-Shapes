@@ -1,16 +1,10 @@
 #pragma once
 
-#include <vector>
-#include <iostream>
-
-typename std::vector<float> vector;
-
 class Entity
 {
     private:
         static unsigned int _entitiesNumber; //static variable dec.
         const unsigned int _ID;
-
 
     public:
         Entity():_ID(_entitiesNumber++){};
@@ -22,5 +16,3 @@ class Entity
 
 };
 
-//static variable def.
-unsigned int Entity::_entitiesNumber = 0;
